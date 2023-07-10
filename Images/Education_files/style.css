@@ -1,0 +1,375 @@
+
+#homeBody {
+    margin: 0;
+    padding:0;
+    background: #ece7f6; 
+    /* background-color: #D0cfec; */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center; 
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-family: Lato;
+    font-weight: bolder;
+}
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d3468f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.homeLogo {
+    width: 130px;  
+    height: 125px;
+    border: 2px solid #fefad1;
+    border-radius: 25px;
+}
+
+/* Introduction */
+.intro * {
+    margin: 0;
+    font-family: Heebo;   
+}
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.intro, h1 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+h1 {
+    font-family: "Rampart One";
+    font-size: 70px;
+    text-align: center;
+}
+.intro p {
+    color: black;
+    font-size: 1.2em;
+    position: relative;
+    margin-left: 35px;
+
+}
+.intro img {
+    border: 4px solid #fefad1;
+    border-radius: 8px;
+    height: 400px; 
+}
+.para-col {
+    display: flex;
+    flex-direction: column;
+}
+.para-col ul li {
+    font-family: Heebo;
+    font-size: larger;
+    padding: 0.5%;
+    width: 80%;
+    margin-left: 35px;
+}
+/* Different Tabs Description */
+.tabs-descrip {
+    font-family: Heebo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 35px;
+    
+}
+.tabs-descrip h2 {
+    font-weight: bolder;
+    font-family: Lato;
+    margin-bottom: 0;
+    margin-top: 3rem;
+    text-shadow: 0.3px 0.3px 1px #d3468f;
+}
+.tabs-descrip p {
+    font-family: Heebo;
+    width: 95%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Different Tabs */
+.container {
+    width:90%;
+    height: auto;
+    margin: auto;
+    padding: 25px;
+    position: static;
+    text-decoration: none;
+    background-color: #CFD9FF;
+    border: 2px solid #fefad1;
+    border-radius: 25px;
+    
+} 
+.row {
+    margin: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 25px 80px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    outline-style: solid;
+    outline-color: #9592F5;
+}
+.container .card:hover {
+   height: 400px; 
+}
+.container .card .tabsPic {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background-color: #CFD9FF;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .card:hover .tabsPic{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+.container .card .tabsPic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+.container .card .content h3 {
+    font-size: 1.3em;
+    font-family: Lato;
+    font-weight: bolder;
+    color: black;
+    text-shadow: 0.3px 0.2px 0.5px #fefad1;
+
+}
+.container .card .content p {
+    font-family: Heebo;
+    margin: 4%;
+    text-align: center;
+}
+.container .card .content a {
+    top: 15px;
+    display: block;
+    text-decoration: none;
+}
+.container .row .card .content::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d3468f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.container .row .card .content:hover::after{
+    width:25%;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 30px 0;
+}
+.icons .fa{
+    color: #d3468f;
+    margin: 0 14px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o {
+    color: #0042be;
+}
+
+/* Educational Journey CSS */
+#educBody {
+    background-color: #b5c4d8; 
+    font-family: "Karla", sans-serif;
+    /* display: block;
+    margin: 8px; */
+}
+.eduLogo {
+    width: 130px;  
+    height: 125px;
+    border: 2px solid #2a408b;
+    border-radius: 25px;
+}
+#eduHoverColor ul li::after{
+    background:#e88474;
+}
+.card2 {
+    min-width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 1em;
+    /* background-color: #f5e4df; */
+    background-color: #deeaf8;
+    margin-left: 4em;
+    margin-top: 2.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+}
+.card2 ul li {
+    font-size: 14px;
+    text-align: left;
+    list-style-type:circle;
+    margin: 0;
+    vertical-align:middle;
+    display: list-item;
+    font-size: 1em;
+    font-family: "Karla";
+    font-weight: bold; 
+}
+.about-content ul {
+    text-align: left;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.about-content {
+    max-width: 50%;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+}
+
+.title {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: "Rampart One", cursive;    
+    letter-spacing: 0.175rem;
+}
+.about-me-content-para {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 1.19em;
+}
+#linkedIn {
+    list-style-image: url(Images/linkedin.png);
+}
+#gitHub {
+    list-style-image: url(Images/github.png);
+}
+#email {
+    list-style-image: url(Images/email.png);
+}
+/*  */
+
+.projects {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    row-gap: 3em;
+}
+.projects a {
+    max-width: 300px;
+    min-height: 200px;
+    text-align: center;
+    color: #5e5654;
+    text-decoration: none;
+}
+
+div .projects img {
+    border: dotted 5px #f5e4df;
+    border-radius: 2em;
+    object-fit: cover;
+}
+
+
+
+/*  */
+.proj-title {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Rampart One", cursive;    
+    letter-spacing: 0.175rem;
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+.projCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    text-align: center;
+    border-radius: 6px;
+    border-style: inset;
+    background-color: #f1f1f1;
+}
