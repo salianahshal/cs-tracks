@@ -1,4 +1,4 @@
-const navLinks = document.getElementById("navLinks")
+let navLinks = document.getElementById("navLinks")
 
     function showMenu(){
         navLinks.style.right = "0";
@@ -8,3 +8,4 @@ const navLinks = document.getElementById("navLinks")
     }
     // When we click on close icon, it'll add the right value -200
     //When we click on the menu icon it'll add the right value 0, so it'll be visiable 
+    
