@@ -1,11 +1,16 @@
-let navLinks = document.getElementById("navLinks")
+const responsiveMenuButton = document.getElementById("responMenuToggleBtn");
+const navBarLinks = document.querySelector(".navbar-links");
 
-    function showMenu(){
-        navLinks.style.right = "0";
-    } 
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-    // When we click on close icon, it'll add the right value -200
-    //When we click on the menu icon it'll add the right value 0, so it'll be visiable 
-    
+responsiveMenuButton.addEventListener("click", () => {
+  navBarLinks.classList.toggle("open");
+  responsiveMenuButton.classList.toggle("open");
+});
+
+const allNavLinks = document.querySelector(".navbar-links");
+
+allNavLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navBarLinks.classList.remove("open");
+    responsiveMenuButton.classList.remove("open");
+  });
+});
