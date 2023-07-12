@@ -1,91 +1,240 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>CS Tracks</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Heebo&family=Karla&family=Lato&family=Pangolin&family=Rampart+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body id="tracksBody">
-    <!---------Navgiation Bar----------->
-    <nav>
-        <a href="index.html"><img  class="tracksLogo" src="Images/logo.png"></a>
-        <div class="nav-links" id="navLinks" class="tracksHoverColor">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li> <a href="index.html">HOME</a></li>
-                <li> <a href="education.html">EDUCATIONAL JOURNEY</a></li>
-                <li> <a href="cs-tracks.html">CS TRACKS</a></li>
-            </ul>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth&family=Heebo&family=Karla&family=Lato&family=Pangolin&family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body id="tracksBody">
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <span><img src="Images/logo.png" /></span>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
-  <h1 class="tracks-header1">Helpful Resources</h1>
-  <!-- <h2 class="tracks-header2">Website Development</h2> -->
-  <div class="tracks-conatiner">
-    <h2>Website Development</h2>
+        <button aria-label="toggle-menu" id="responMenuToggleBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="openIcon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="closeIcon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="education.html">EDUCATIONAL JOURNEY</a></li>
+            <li><a href="cs-tracks.html">CS TRACKS</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <h1 class="tracks-header1">Helpful Resources</h1>
+    <div class="tracks-conatiner">
+      <h2>Website Development</h2>
       <div class="column">
         <div class="trackCard">
           <div>
             <h4>To Learn HTML/CSS/JavaScript</h4>
             <ul>
-              <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-              <li><a href="https://scrimba.com/" target="_blank">Scrimba</a></li>
-              <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Mozilla</a></li>
-              <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a></li>
-              <li><a href="https://www.educative.io/courses/learn-html-css-javascript-from-scratch" target="_blank">Educative</a></li>
+              <li>
+                <a href="https://www.w3schools.com/" target="_blank"
+                  >W3 Schools</a
+                >
+              </li>
+              <li>
+                <a href="https://scrimba.com/" target="_blank">Scrimba</a>
+              </li>
+              <li>
+                <a href="https://www.freecodecamp.org/" target="_blank"
+                  >freeCodeCamp</a
+                >
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/en-US/" target="_blank"
+                  >MDN Mozilla</a
+                >
+              </li>
+              <li>
+                <a href="https://www.codecademy.com" target="_blank"
+                  >Codecademy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.educative.io/courses/learn-html-css-javascript-from-scratch"
+                  target="_blank"
+                  >Educative</a
+                >
+              </li>
+              <li>
+                <a href="https://getbootstrap.com/" target="_blank"
+                  >Bootstrap</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="trackCard">
-            <h4>Tools 4 Developing Websites</h4>
-            <ul>
-              <li><a href="https://www.typewolf.com/" target="_blank">Typewolf</a></li>
-              <li><a href="https://www.figma.com/" target="_blank">Figma</a></li>
-              <li><a href="https://www.canva.com/" target="_blank">Canva</a></li>
-              <li><a href="https://claritee.io/" target="_blank">Claritee</a></li>
-              <li><a href="https://codepen.io/" target="_blank">Code Snippets</a></li>
-              <li><a href="https://coolors.co/" target="_blank">Color Palettes</a></li>
-              <li><a href="https://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a></li>
-              <li><a href="https://toolness.github.io/accessible-color-matrix/" target="_blank">Accessible Palette Builder</a></li>
-              <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
-              <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
-              <li><a href="https://code.visualstudio.com/" target="_blank"> VS Code</a></li>
-              <li><a href="https://replit.com/" target="_blank">Replit</a></li>
-            </ul>
+          <h4>Tools 4 Developing Websites</h4>
+          <ul>
+            <li>
+              <a href="https://www.typewolf.com/" target="_blank">Typewolf</a>
+            </li>
+            <li><a href="https://www.figma.com/" target="_blank">Figma</a></li>
+            <li><a href="https://www.canva.com/" target="_blank">Canva</a></li>
+            <li><a href="https://claritee.io/" target="_blank">Claritee</a></li>
+            <li>
+              <a href="https://codepen.io/" target="_blank">Code Snippets</a>
+            </li>
+            <li>
+              <a href="https://coolors.co/" target="_blank">Color Palettes</a>
+            </li>
+            <li>
+              <a
+                href="https://webaim.org/resources/contrastchecker/"
+                target="_blank"
+                >Color Contrast Checker</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://toolness.github.io/accessible-color-matrix/"
+                target="_blank"
+                >Accessible Palette Builder</a
+              >
+            </li>
+            <li>
+              <a href="https://fonts.google.com/" target="_blank"
+                >Google Fonts</a
+              >
+            </li>
+            <li>
+              <a href="https://stackoverflow.com/" target="_blank"
+                >Stack Overflow</a
+              >
+            </li>
+            <li>
+              <a href="https://code.visualstudio.com/" target="_blank">
+                VS Code</a
+              >
+            </li>
+            <li><a href="https://replit.com/" target="_blank">Replit</a></li>
+          </ul>
         </div>
       </div>
       <div class="column">
         <div class="trackCard">
-            <h4>HTML/CSS/JS Cheatsheets</h4>
-            <ul>
-              <li><a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf" target="_blank">HTML</a></li>
-              <li><a href="https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf" target="_blank">CSS</a></li>
-              <li><a href="https://quickref.me/javascript" target="_blank">JavaScript</a></li>
-              <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-              <li><a href="https://medium.com/@cannon_circuit/10-must-have-cheat-sheets-for-web-developers-810c2afa1206" target="_blank">For More Support</a></li>
-            </ul>
+          <h4>HTML/CSS/JS Cheatsheets</h4>
+          <ul>
+            <li>
+              <a
+                href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"
+                target="_blank"
+                >HTML</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf"
+                target="_blank"
+                >CSS</a
+              >
+            </li>
+            <li>
+              <a href="https://quickref.me/javascript" target="_blank"
+                >JavaScript</a
+              >
+            </li>
+            <li>
+              <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
+            </li>
+            <li>
+              <a href="http://cheatsheets.shecodes.io/bootstrap" target="_blank"
+                >SheCodes: Bootstrap</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-  </div>
-  </div>
-  <div class="tracks-conatiner">
+    </div>
+    <div class="tracks-conatiner">
       <h2>OOP Langauges, AI & Opportunities</h2>
       <div class="column">
         <div class="trackCard">
-            <h4>OOP Lang: Java, Python, C/C++</h4>
-            <ul>
-              <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-              <li><a href="https://www.programiz.com/" target="_blank">Programiz</a></li>
-              <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
-              <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
-              <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a></li>
-              <li><a href="https://www.educative.io/courses/learn-html-css-javascript-from-scratch" target="_blank">Educative</a></li>
-            </ul>
+          <h4>OOP Lang: Java, Python, C/C++</h4>
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/" target="_blank"
+                >W3 Schools</a
+              >
+            </li>
+            <li>
+              <a href="https://www.programiz.com/" target="_blank"
+                >Youtube Tutorials</a
+              >
+              <ul>
+                <li>The Coding Train</li>
+                <li>Corey Schafer</li>
+                <li>Derek Banas</li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="https://try.codecademy.com/learn-python-3?g_network=g&g_productchannel=&g_adid=525668108388&g_locinterest=&g_keyword=best%20python%20course%20online&g_acctid=243-039-7011&g_adtype=&g_keywordid=kwd-298905378658&g_ifcreative=&g_campaign=account&g_locphysical=9004338&g_adgroupid=102526216698&g_productid=&g_source={sourceid}&g_merchantid=&g_placement=&g_partition=&g_campaignid=10030170700&g_ifproduct=&utm_id=t_kwd-298905378658:ag_102526216698:cp_10030170700:n_g:d_c&utm_source=google&utm_medium=paid-search&utm_term=best%20python%20course%20online&utm_campaign=US_Language:_Pro_-_Exact&utm_content=525668108388&g_adtype=search&g_acctid=243-039-7011&gclid=Cj0KCQjwnrmlBhDHARIsADJ5b_njsC52rRG3Z8ZUc0WAuYT2OZq8oYuO8DzgcqPy_xupnwneMpY4jJwaApkVEALw_wcB"
+                target="_blank"
+                >Codecademy: Python</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.coursera.org/learn/object-oriented-java"
+                target="_blank"
+                >Coursera: Java</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/cpp-programming/oop#:~:text=In%20C%2B%2B%2C%20object%2Doriented,feature%20is%20known%20as%20encapsulation."
+                target="_blank"
+                >Programiz: C++</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
       <div class="column">
@@ -93,28 +242,70 @@
           <div>
             <h4>Artificial Intelligence (AI)</h4>
             <ul>
-              <li><a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf" target="_blank">HTML</a></li>
-              <li><a href="https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf" target="_blank">CSS</a></li>
-              <li><a href="https://quickref.me/javascript" target="_blank">JavaScript</a></li>
-              <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-              <li><a href="https://medium.com/@cannon_circuit/10-must-have-cheat-sheets-for-web-developers-810c2afa1206" target="_blank">For More Support</a></li>
+              <li>
+                <a
+                  href="https://www.coursera.org/learn/ai-for-everyone"
+                  target="_blank"
+                  >AI for Everyone by IBM Coursera
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://ai.google/build/machine-learning/"
+                  target="_blank"
+                  >Learn with Google AI
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.udacity.com/course/intro-to-artificial-intelligence--cs271"
+                  target="_blank"
+                  >Intro to AI by Udacity
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463"
+                  target="_blank"
+                  >Cheat Sheets for AI</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/user/sentdex" target="_blank"
+                  >YouTube: sentdex</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="trackCard">
-            <h4>Opportunities</h4>
-            <ul>
-              <li><a href="https://joinhandshake.com/" target="_blank">Handshack</a></li>
-              <li><a href="https://jobs.lever.co/certik" target="_blank">Certik</a></li>
-              <li><a href="https://www.linkedin.com/jobs/linkedin-jobs-new-york" target="_blank">LinkedIn Jobs</a></li>
-              <li><a href="https://indeed.com/" target="_blank">Indeed</a></li>
-              <li><a href="https://www.hbcucareers.com/info" target="_blank">HBCU Careers</a></li>
-            </ul>
+          <h4>Opportunities</h4>
+          <ul>
+            <li>
+              <a href="https://joinhandshake.com/" target="_blank">Handshack</a>
+            </li>
+            <li>
+              <a href="https://jobs.lever.co/certik" target="_blank">Certik</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/jobs/linkedin-jobs-new-york"
+                target="_blank"
+                >LinkedIn Jobs</a
+              >
+            </li>
+            <li><a href="https://indeed.com/" target="_blank">Indeed</a></li>
+            <li>
+              <a href="https://www.hbcucareers.com/info" target="_blank"
+                >HBCU Careers</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
