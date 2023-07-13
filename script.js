@@ -7,10 +7,3 @@ responsiveMenuButton.addEventListener("click", () => {
 });
 
 const allNavLinks = document.querySelector(".navbar-links");
-
-allNavLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navBarLinks.classList.remove("open");
-    responsiveMenuButton.classList.remove("open");
-  });
-});
