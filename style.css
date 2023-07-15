@@ -33,7 +33,6 @@
   content: "";
   width: 0%;
   height: 2px;
-  /* background: #d3468f; */
   background-color: #7a7a7a;
   display: block;
   margin: auto;
@@ -42,6 +41,7 @@
 .navbar-links ul li:hover::after {
   width: 100%;
 }
+/* Styling Dropdown Menu Icons for Smaller Screens */
 #responMenuToggleBtn {
   background-color: transparent;
   border: 0;
@@ -71,6 +71,7 @@
 #responMenuToggleBtn.open .closeIcon {
   display: block;
 }
+/* Dropdown Menu Resizing for Smaller Screens  */
 @media screen and (max-width: 770px) {
   #responMenuToggleBtn {
     display: block;
@@ -143,6 +144,7 @@ h1 {
   border-radius: 10px;
   height: 390px;
 }
+/* Adjusting web intro for smaller screens */
 @media (max-width: 1140px) {
   h1 {
     font-size: 45px;
@@ -307,6 +309,7 @@ h1 {
     margin: 45px 0px 20px;
   }
 }
+/* Styling Footer Icons */
 .footer {
   width: 100%;
   height: fit-content;
@@ -324,7 +327,7 @@ h1 {
   color: #0042be;
 }
 
-/* * * Educational Journey CSS * * */
+/* * * CSS for Educational Journey Page * * */
 #educBody {
   margin: 0.5rem 2rem;
   padding: 0;
@@ -337,6 +340,7 @@ h1 {
   text-align: center;
   text-shadow: 2px 1px 1px #e88474;
 }
+/* Styling for Self-Introduction Card */
 .self-intro-card {
   min-width: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
@@ -371,6 +375,7 @@ h1 {
   border-radius: 2px;
   border: 1px solid black;
 }
+/* Card Styling for Smaller Screens */
 @media (max-width: 1260px) {
   .self-intro-card {
     flex-shrink: 2;
@@ -403,11 +408,12 @@ h1 {
 .about-content ul a:hover {
   background: #e88474;
 }
+/* Icons for Connecting on Portfolio Page */
 #linkedIn {
   list-style-image: url(Images/linkedin.png);
 }
 #gitHub {
-  list-style-image: url(Images/github2.png);
+  list-style-image: url(Images/github.png);
 }
 #email {
   list-style-image: url(Images/email.png);
@@ -451,7 +457,7 @@ h1 {
   }
 }
 
-/* * * CS Tracks * * */
+/* * * CSS for CS Tracks Page * * */
 #tracksBody {
   background-color: #d5e1d1;
 }
@@ -519,6 +525,7 @@ h1 {
   text-decoration: none;
   font-size: 15px;
 }
+/* Different hovering effects for the resources links */
 .trackCard ul li a:link {
   color: black;
 }
@@ -554,9 +561,6 @@ h1 {
     margin: 2% 19% 2% 1%;
     padding-left: 90px;
   }
-  /* .column {
-    margin-right: 30%;
-  } */
   .tracks-conatiner .column .trackCard h4 {
     font-size: 1rem;
   }
