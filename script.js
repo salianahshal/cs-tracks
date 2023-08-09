@@ -1,4 +1,4 @@
-//ALL listed JS is for the dropdown menu for smaller screens
+//Dropdown menu
 const responsiveMenuButton = document.getElementById("responMenuToggleBtn");
 const navBarLinks = document.querySelector(".navbar-links");
 
