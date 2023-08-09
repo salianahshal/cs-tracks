@@ -393,6 +393,11 @@ h1 {
   font-size: 1rem;
   line-height: 8px;
 }
+@media (max-width: 400px) {
+  .tracks-card {
+    border-radius: 20px;
+  }
+}
 #youtubeList {
   text-decoration: none;
   font-size: 15px;
