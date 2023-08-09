@@ -1,5 +1,4 @@
-#homeBody {
-  margin: 0.5rem 2rem;
+body {
   padding: 0;
   background: #eceafc;
 }
@@ -9,12 +8,14 @@
   align-items: center;
   justify-content: space-between;
 }
-.navbar .brand img {
-  margin: 1rem 4rem;
-  width: 130px;
-  height: 125px;
-  border: 2.5px solid #999999;
-  border-radius: 20px;
+
+.navbar .brand h4 {
+  margin: 2rem;
+  padding-bottom: 8px;
+  font-size: 30px;
+  font-family: "Rampart One", cursive;
+  box-shadow: 0.3rem 0.3rem 0.2rem #c8d0e7, -0.2rem -0.2rem 0.4rem #fff;
+  padding: 0 10px;
 }
 .navbar-links ul {
   margin: 0;
@@ -22,18 +23,25 @@
   display: flex;
   gap: 1rem;
   list-style-type: none;
-  font-family: Lato, Heebo, Karla;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+  margin-right: 20px;
 }
+
 .navbar-links ul li a {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
+    inset -0.2rem -0.2rem 0.5rem #fff;
+  padding: 0 20px;
   color: black;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 22px;
+  font-weight: 900;
 }
 .navbar-links ul li::after {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #7a7a7a;
+  background-color: #d3468f;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -41,7 +49,7 @@
 .navbar-links ul li:hover::after {
   width: 100%;
 }
-/* Styling Dropdown Menu Icons for Smaller Screens */
+/* styling dropdown menu icons for responsiveness*/
 #responMenuToggleBtn {
   background-color: transparent;
   border: 0;
@@ -71,8 +79,8 @@
 #responMenuToggleBtn.open .closeIcon {
   display: block;
 }
-/* Dropdown Menu Resizing for Smaller Screens  */
-@media screen and (max-width: 770px) {
+/* dropdown menu resizing for responsiveness */
+@media screen and (max-width: 775px) {
   #responMenuToggleBtn {
     display: block;
   }
@@ -89,23 +97,28 @@
   }
   .navbar-links ul {
     flex-direction: column;
-    padding: 1rem;
-    border: 1px dashed;
-    border-radius: 2px;
-    font-weight: 700;
-    background-color: #faf8f5;
+    padding: 1rem 1.3rem;
+  }
+  .navbar-links ul li a {
+    font-size: 14px;
   }
   .navbar-links ul li:hover::after {
     width: 0%;
   }
   .navbar-links ul li a:hover {
-    border-bottom: 2px solid #7a7a7a;
+    border-bottom: 2px solid #d3468f;
     padding-bottom: 3px;
   }
+  .navbar .brand h4 {
+    margin: 0 1rem;
+    font-size: 16px;
+    font-family: "Rampart One", cursive;
+  }
 }
+
 .intro * {
-  margin: 0;
-  font-family: Heebo;
+  margin: 0 10px;
+  font-family: "Heebo";
 }
 .intro {
   display: flex;
@@ -113,17 +126,15 @@
   column-gap: 1%;
 }
 h1 {
-  font-family: "Rampart One";
-  font-size: 55px;
-  padding-bottom: 0.5%;
+  font-family: monospace, "Heebo", "Lato", sans-serif;
+  font-size: 35px;
+  padding-bottom: 0.8%;
   text-align: center;
-  text-shadow: 2px 1px 1px #d3468f;
+  text-shadow: 1px 0.3px 0.5px #3c80ff;
 }
 .intro .intro-content {
   display: flex;
   flex-flow: column wrap;
-  font-family: Heebo;
-  font-weight: 800;
   line-height: 2.2rem;
   letter-spacing: 1px;
   font-size: large;
@@ -131,24 +142,29 @@ h1 {
 .intro .intro-content p {
   position: relative;
   margin-left: 50px;
+  font-weight: 600;
+  font-family: "Heebo", "Lato", sans-serif;
 }
 .intro .intro-content ul li {
   padding: 0.6%;
   margin-left: 35px;
   list-style: circle;
+  font-weight: 600;
+  font-family: "Heebo", "Lato", sans-serif;
 }
 .intro img {
-  border: 4px solid #fefad1;
-  outline-style: solid;
-  outline-color: #0042be;
-  border-radius: 10px;
+  border: 0.5px solid #3c80ff;
+  box-shadow: inset 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #cfd9ff;
+  border-radius: 15px;
   height: 390px;
 }
-/* Adjusting web intro for smaller screens */
 @media (max-width: 1140px) {
   h1 {
-    font-size: 45px;
+    font-size: 28px;
     text-align: center;
+  }
+  .intro * {
+    margin: 0px;
   }
   .intro {
     display: flex;
@@ -157,20 +173,19 @@ h1 {
   }
   .intro-content p,
   ul li {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 800;
     line-height: 2rem;
     letter-spacing: 1px;
   }
   .intro img {
-    margin-left: 6%;
-    margin-bottom: 4%;
-    width: 90%;
+    margin: 0 10% 4% 10%;
+    width: 80%;
     height: auto;
   }
 }
 .tabs-descrip {
-  font-family: Heebo;
+  font-family: "Heebo", "Lato", sans-serif;
   font-weight: 700;
   display: flex;
   flex-direction: column;
@@ -182,12 +197,11 @@ h1 {
   font-size: large;
 }
 .tabs-descrip h2 {
-  font-weight: 800;
-  font-family: "Rampart One", cursive;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-  font-size: 36px;
-  letter-spacing: 0.17rem;
+  text-shadow: 1px 0.3px 0.5px #3c80ff;
+  font-family: monospace;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
 }
 .tabs-descrip p {
   font-family: Heebo;
@@ -197,12 +211,9 @@ h1 {
   letter-spacing: 1px;
 }
 .container {
-  height: 480px;
-  margin: 0% 4%;
+  height: 490px;
+  margin: 0 10px;
   padding: 60px 10px 35px;
-  text-decoration: none;
-  background-color: #cfd9ff;
-  border: 2px solid #fefad1;
   border-radius: 25px;
 }
 .row {
@@ -220,7 +231,7 @@ h1 {
   height: 350px;
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
   transition: 0.5s;
   outline-style: solid;
   outline-color: #d3468f;
@@ -265,14 +276,14 @@ h1 {
 }
 .container .card .content h3 {
   font-size: 21px;
-  font-family: Lato, Heebo, Karla;
+  font-family: "Lato", "Heebo", "Karla";
   font-weight: 900;
   color: black;
   letter-spacing: 1.5px;
   text-shadow: 1px 0.3px 0.5px #3c80ff;
 }
 .container .card .content p {
-  font-family: Heebo;
+  font-family: "Heebo", sans-serif;
   margin: 4%;
   text-align: center;
 }
@@ -299,22 +310,36 @@ h1 {
   width: 25%;
 }
 @media (max-width: 948px) {
+  .tabs-descrip h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .tabs-descrip p {
+    font-size: 16px;
+    text-align: center;
+  }
   .container {
-    height: 135vh;
+    height: 100vh;
   }
   .row {
-    gap: 20px;
+    gap: 100px;
   }
-  .container .card {
-    margin: 45px 0px 20px;
+  .container .card .tabsPic {
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    height: 220px;
+  }
+  .footer {
+    margin-top: 15%;
   }
 }
-/* Styling Footer Icons */
+/* styling footer icons */
 .footer {
   width: 100%;
   height: fit-content;
   text-align: center;
-  padding: 30px 0;
+  padding: 15px 0 20px;
 }
 .icons .fa {
   color: #d3468f;
@@ -327,246 +352,62 @@ h1 {
   color: #0042be;
 }
 
-/* * * CSS for Educational Journey Page * * */
-#educBody {
-  margin: 0.5rem 2rem;
-  padding: 0;
-  background-color: #dae1eb;
-  font-family: Lato, "Heebo", "Karla";
-}
-.edu-header1 {
-  font-family: "Rampart One";
-  font-size: 55px;
-  text-align: center;
-  text-shadow: 2px 1px 1px #e88474;
-}
-/* Styling for Self-Introduction Card */
-.self-intro-card {
-  min-width: 25%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-  transition: 0.3s;
-  border-radius: 5px;
-  padding: 35px 25px;
-  background-color: #faf3f1;
-  margin: auto;
+/* * * CS Tracks Page * * */
+.tracks-container {
   display: flex;
-  flex-direction: column;
-  line-height: 28px;
-  letter-spacing: 1.5px;
-}
-.row .self-intro-card h3 {
-  text-align: center;
-  font-family: Heebo, Lato;
-  font-weight: 900;
-  font-size: 1.5rem;
-  text-shadow: 2px 2px #aacccb;
-  border-style: outset;
-  border-color: #ecd7d2;
-}
-.self-intro-card ul li {
-  text-align: justify;
-  list-style-type: circle;
-  margin: 0;
-  font-size: 1.1em;
-  font-family: Heebo, Lato, Karla;
-}
-.self-intro-card img {
-  align-self: center;
-  border-radius: 2px;
-  border: 1px solid black;
-}
-/* Card Styling for Smaller Screens */
-@media (max-width: 1260px) {
-  .self-intro-card {
-    flex-shrink: 2;
-  }
-  .self-intro-card img {
-    width: 300px;
-  }
-}
-.about-content {
-  max-width: 50%;
-  line-height: 40px;
-  letter-spacing: 1.5px;
-}
-.about-content h3 {
-  font-weight: 900;
-  font-size: 1.19em;
-  font-family: Heebo;
-}
-.about-content h2 {
-  display: block;
-  font-size: 2.2em;
-  font-weight: 700;
-  font-family: "Rampart One", cursive;
-  letter-spacing: 0.17rem;
-}
-.about-content ul a {
-  text-decoration: none;
-  font-family: Lato;
-}
-.about-content ul a:hover {
-  background: #e88474;
-}
-/* Icons for Connecting on Portfolio Page */
-#linkedIn {
-  list-style-image: url(Images/linkedin.png);
-}
-#gitHub {
-  list-style-image: url(Images/github.png);
-}
-#email {
-  list-style-image: url(Images/email.png);
-}
-.proj-title {
-  text-align: center;
-  font-weight: 800;
-  font-family: "Rampart One", cursive;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-  font-size: 36px;
-  letter-spacing: 0.17rem;
-}
-.projects {
   display: flex;
-  flex-flow: wrap row;
-  justify-content: space-evenly;
-  row-gap: 2em;
-  padding-top: 1%;
-  margin-bottom: 5%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 60px 35px;
 }
-.projects a {
-  max-width: 300px;
-  min-height: 200px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
+.tracks-card {
+  position: relative;
+  width: 350px;
+  min-height: 350px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: inset 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
+  outline-style: solid;
+  outline-color: #d3468f;
+  margin: 15px 10px;
 }
-.projects a:hover {
-  color: #e88474;
-}
-.projects img {
-  border: double 4px #e88474;
-  border-radius: 1em;
-  object-fit: cover;
-}
-@media (max-width: 1180px) {
-  .projects {
-    column-gap: 30px;
-  }
-}
-
-/* * * CSS for CS Tracks Page * * */
-#tracksBody {
-  background-color: #d5e1d1;
-}
-.tracks-header1 {
-  font-family: "Rampart One";
-  font-size: 55px;
-  text-align: center;
-  text-shadow: 3px 0.8px 0.8px #a382ae;
-}
-.tracks-conatiner {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  border: solid black;
-  margin: 1% 6%;
-  justify-content: space-evenly;
-  padding: 16px 25px;
-}
-.tracks-conatiner h2 {
-  font-size: 2em;
-  font-weight: 700;
-  font-family: "Rampart One", cursive;
-  letter-spacing: 0.17rem;
-  text-align: center;
-  margin: 2% 26%;
-  padding-left: 90px;
-}
-.column {
-  width: 300px;
-  padding: 0 10px;
-  font-family: Heebo;
-}
-.trackCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  padding: 14px;
-  text-align: center;
-  border-radius: 6px;
-  border: 2px dashed #a382ae;
-  background-color: #f1f1f1;
-  height: 55vh;
-  margin-bottom: 5%;
-}
-.tracks-conatiner .column .trackCard h4 {
+.tracks-card h4 {
   border: 1.5px outset #a382ae;
+  text-align: center;
   border-radius: 5px;
-  font-size: Lato;
+  font-size: 16px;
   text-shadow: 3px 2px #f5ffe3;
   font-size: 1.1rem;
   font-weight: 700;
+  padding: 6px;
+  margin: 6% 10%;
 }
-.tracks-conatiner .column .trackCard ul li {
+.tracks-container .tracks-card ul li {
   text-align: justify;
   list-style-type: circle;
-  margin: 0;
-  font-size: 1.1em;
-  margin-top: 0;
-  font-family: Heebo, Lato, Karla;
+  font-family: "Heebo", "Lato", "Karla";
 }
-.tracks-conatiner .column .trackCard ul li a {
+.tracks-container .tracks-card ul li a {
   text-decoration: none;
-  font-size: 18px;
-  line-height: 5px;
+  font-size: 1rem;
+  line-height: 8px;
 }
 #youtubeList {
   text-decoration: none;
   font-size: 15px;
 }
-/* Different hovering effects for the resources links */
-.trackCard ul li a:link {
+/* various hovering effects for the resources links */
+.tracks-card ul li a:link {
   color: black;
 }
-.trackCard ul li a:visited {
+.tracks-card ul li a:visited {
   color: #660066;
 }
-.trackCard ul li a:hover {
+.tracks-card ul li a:hover {
   color: hotpink;
-  background: #e1d1db;
+  background: gainsboro;
 }
-.trackCard ul li a:active {
+.tracks-card ul li a:active {
   color: #885df1;
-}
-@media (max-width: 1170px) {
-  .tracks-conatiner {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-    justify-content: center;
-    margin: 2% 9%;
-  }
-  .trackCard {
-    height: 65vh;
-    margin-bottom: 5%;
-    width: 300px;
-  }
-  .tracks-conatiner h2 {
-    font-size: 2em;
-    font-weight: 700;
-    font-family: "Rampart One", cursive;
-    letter-spacing: 0.17rem;
-    text-align: center;
-    margin: 2% 19% 2% 1%;
-    padding-left: 90px;
-  }
-  .tracks-conatiner .column .trackCard h4 {
-    font-size: 1rem;
-  }
-  .tracks-conatiner .column .trackCard ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 5px;
-  }
 }
